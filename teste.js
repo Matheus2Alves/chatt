@@ -78,8 +78,10 @@ function handleInput(event) {
         // Scroll to the bottom of the chatbox
         chatbox.scrollTop = chatbox.scrollHeight;
         let infoCliente = "Olá, meu nome é " + pedidoCliente.nome + ". Gostaria de marcar uma consulta de " + pedidoCliente.servico + ". Qual o preço do atendimento? e os horários disponíveis porfavor!";
-        chatbox.innerHTML += `<div class="bot"><p>Ótima escolha. Clique no link para acessar o WhatsApp da Clínica Aline Alves Podologia e solicitar um orçamento. Agradecemos pelo seu contato!<br><a target="blank" href="https://wa.me/5511983284301?text=${encodeURIComponent(infoCliente)}>ir para o Whatsapp</a></p></div>`; 
-        chatbox.innerHTML += `<div class="bot"><a target="blank" href="https://wa.me/5511983284301?text=${encodeURIComponent(infoCliente)}>ir para o Whatsapp</a></p></div>`
+        chatbox.innerHTML += `<div class="bot"><p>Ótima escolha ${pedidoCliente.nome}. <br> Clique no link para acessar o WhatsApp da Clínica Aline Alves Podologia e solicitar um orçamento ou agende através de nossa agenda. <br> Agradecemos pelo seu contato!</div>`; 
+        chatbox.innerHTML += `<button><a target="blank" href="https://wa.me/5511983284301?text=${encodeURIComponent(infoCliente)}">ir para o Whatsapp</a></button>`;
+        chatbox.innerHTML += `<button><a target="blank" href="#">Ir para a agenda eletrônica</a></button>`;
+        //chatbox.innerHTML += `<div class="bot"><a target="blank" href="https://wa.me/5511983284301?text=${encodeURIComponent(infoCliente)}>ir para o Whatsapp</a></div>`;
         };
     }
 }
