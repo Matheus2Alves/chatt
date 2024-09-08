@@ -31,7 +31,7 @@ window.onload = function() {
 };
 
 function displayWelcome() {
-    const greetingMessage = "A <strong>Clínica Aline Alves Podologia </strong> oferece cuidados especializados para a saúde dos seus pés. Estamos localizados na <strong>Av. São Paulo, Nº 49, no bairro Vila Jordanopolis, em São Bernardo do Campo - SP.</strong> <br>Ofereçemos servicos como: <br><strong>1-Podologia</strong> <br><strong>2-cílios</strong> <br><strong>3-sobrancelha</strong>. <br>Se você deseja marcar uma consulta, escolha um serviço desejado. <br> Para mais informações,<strong> acesse nosso site pressionando o botão 'site'</strong>";
+    const greetingMessage = "A <strong>Clínica Aline Alves Podologia </strong> oferece cuidados especializados para a saúde dos seus pés. <br> Estamos localizados na <strong>Av. São Paulo, Nº 49, no bairro Vila Jordanopolis, em São Bernardo do Campo - SP.</strong> <br>Ofereçemos servicos como: <br><strong>1-Podologia</strong> <br><strong>2-cílios</strong> <br><strong>3-sobrancelha</strong>. <br><br>Se você deseja marcar uma consulta, escolha um serviço desejado. <br><br> Para mais informações,<strong> acesse nosso site pressionando o botão 'site'</strong>";
     chatbox.innerHTML += `<div class="bot">${greetingMessage}</div>`;
     showOptions();
 };
@@ -120,7 +120,7 @@ function handleInput(event) {
             <option value="6">Julho</option>
             <option value="7">Agosto</option>
             <option value="8">Setembro</option>
-            <option value="9">Outubro</option>
+            <option value="9">Outubro</option>-
             <option value="10">Novembro</option>
             <option value="11">Dezembro</option>
             </select>
