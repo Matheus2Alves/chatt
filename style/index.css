@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 #chatbox {
@@ -10,10 +14,11 @@ body {
     align-items: flex-start;
     background-color: azure;
     flex-direction: column;
-    width: 300px;
-    height: 400px;
+    max-width: 500px;
+    padding: 25px;
+    margin: 10px;
+    height: 500px;
     border: 1px solid #15ddc2;
-    padding: 10px;
     overflow-y: scroll;
 }
 .user {
@@ -31,20 +36,29 @@ body {
     text-align: left;
     width: auto;
     margin: 4px 0px;
-    max-width: 245px;
+    max-width: 345px;
     background-color: #15ddc2;
     border-radius: 10px;
     padding: 8px;
     color: rgb(0, 0, 0);
 }
 
+.box-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: auto auto;  /* 2 rows */
+    gap: 5px; /* Gap between the grid items */
+    width: 100%;
+
+}
+
 .options {
     background-color: #07667e;
     border-radius: 15px;
+    padding: 7px;
     margin: 4px;
     border: none;
     color: white;
-    padding: 0px 4px;
 }
 
 .options:hover {
@@ -53,12 +67,17 @@ body {
 }
 
 #userInput {
+    display: none;
     background-color: #cde2f0;
     margin: 8px;
     height: 17px;
     padding: 5px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+}
+
+#submitButton {
+    display: none;
 }
 
 .hidden {
