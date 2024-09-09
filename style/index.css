@@ -15,6 +15,11 @@ body {
     align-content: center;
 }
 
+body.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
 #chatbox {
     display: flex;
     border-radius: 10px;
@@ -135,7 +140,31 @@ body {
 }
 
 a {
-    color: red;
-    
+    text-decoration: none;
+    color: white;
 }
 
+#lgpdAviso {
+    font-size: large;
+    width: 350px;
+    font-weight: 700;
+    color: rgb(3, 0, 0);
+  }
+  
+  .LGPD {
+    text-decoration: underline;
+    color: #92a1d1;
+  }
+
+.theme, #submitButton {
+    margin: 20px;
+    padding: 10px;
+    background-color: #07667e;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+.theme:hover {
+    background-color: #07667e;
+  }

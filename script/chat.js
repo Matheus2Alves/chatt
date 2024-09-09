@@ -48,10 +48,12 @@ function showOptions() {
     document.getElementById('podologiaButton').addEventListener('click', podologia);
     document.getElementById('ciliosButton').addEventListener('click', cilios);
     document.getElementById('sobrancelhaButton').addEventListener('click', sobrancelha);
-    document.getElementById('siteButton').addEventListener('click', myFunction);
+    document.getElementById('siteButton').addEventListener('click', site);
     
     console.log(pedidoCliente);
 };
+
+
 
 function podologia() {
     inputField.style.display = 'block';

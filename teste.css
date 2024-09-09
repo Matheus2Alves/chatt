@@ -35,8 +35,9 @@ body {
     cursor: pointer;
 }
 
+/* Hide nav-links by default */
 .nav-links {
-    display: none;
+    display: block;
     flex-direction: column;
     align-items: center;
     list-style: none;
@@ -52,31 +53,21 @@ body {
     font-size: 18px;
 }
 
+.menuDropdown {
+    display: none;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #009688;
+}
+
 /* Hero Section */
 .hero {
     background-color: #009688;
     color: white;
     text-align: center;
     padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    background-color: white;
-    color: #009688;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 /* About Section */
@@ -142,10 +133,16 @@ footer {
     padding: 20px;
 }
 
+
 /* Media Queries for Larger Screens */
 @media (min-width: 768px) {
     .navbar-toggle {
         display: none;
+    }
+
+    .menuDropdown {
+        background-color: yellow;
+        width: 100px;
     }
 
     .nav-links {

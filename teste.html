@@ -10,27 +10,25 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">ClinicCare</div>
-        <button class="navbar-toggle" aria-label="Toggle Navigation">
-            ☰
-        </button>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <button class="navbar-toggle" aria-label="Toggle Navigation">☰</button>
+        <div class="menuDropdown">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Your Health, Our Priority</h1>
-            <p>Providing top-tier care for your wellness and health.</p>
-            <a href="#services" class="btn">Explore Services</a>
-        </div>
+        <h1>Your Health, Our Priority</h1>
+        <p>Providing top-tier care for your wellness and health.</p>
+        <a href="#services" class="btn">Explore Services</a>
     </section>
 
-    <!-- About Section -->
     <section class="about" id="about">
         <h2>About Us</h2>
         <p>We are a team of healthcare professionals dedicated to providing compassionate and high-quality care for all ages.</p>
@@ -68,6 +66,17 @@
         <p>© 2024 ClinicCare. All rights reserved.</p>
     </footer>
 
-    <script src="./script/nav.js"></script>
+    <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navLinks = document.querySelector('.menuDropdown');
+
+        navbarToggle.addEventListener('click', () => {
+            if (navLinks.style.display === 'block') {
+            navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
+    });
+    </script>
 </body>
 </html>
