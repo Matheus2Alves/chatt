@@ -41,7 +41,7 @@ function showOptions() {
         <button id="podologiaButton" class="options"><p>Podologia</p></button>
         <button id="ciliosButton" class="options"><p>Cílios</p></button>
         <button id="sobrancelhaButton" class="options"><p>Sobrancelha</p></button>
-        <button id="siteButton" class="options"><a target="blank" href="./podologiainfo.html"><p>Site</p</a></button>
+        <button id="siteButton" class="options"><a target="blank" href="./paginaInicial.html"><p>Site</p</a></button>
     </div>`;
     
     // Add event listeners for each button
